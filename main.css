@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+/* html {
+ display: block;
+} */
+
+body {
+ margin: 0;
+}
+
+h1, h2 {
+ margin: 0;
+}
+
+button:focus {
+ outline: none;
+}
+
+
+
+/* NAVABAR SECTION */
+
+
+.navbar-container {
+ background: rgb(0, 0, 0, 0.5);
+ margin: 0;
+ height: 3.8rem;
+ z-index: 5;
+ position: fixed;
+ width: 100%;
+ border-bottom: 2px solid #CD5C5C;
+}
+
+.navbar-options {
+ display: none;
+}
+.navbar-name img{
+ margin: 1rem;
+}
+.hamburger-button {
+ border: 1.5px solid #CD5C5C;
+ border-radius: 10px;
+ background: transparent;
+ width: 3rem;
+ cursor: pointer;
+ float: right;
+ margin: 0.3rem 1.5rem;
+}
+
+.hamburger-bar {
+ background: #FFFACD;
+ width: 100%;
+ height: 0.25rem;
+ margin: 0.5rem 0;
+ border-radius: 3px;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+ background: url(images/ramen7.png) center/cover no-repeat;
+ display: flex;
+ justify-content: center;
+ height: 57.45rem
+}
+
+.main-section__title h1{
+ display: flex;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 200;
+ font-size: 3.5rem;
+ color: #FFFACD;
+ text-shadow: 0 0 5px #000000;
+ border-bottom: 2px solid #CD5C5C;
+}
+
+.main-section__title img {
+ display: flex;
+ height: 10rem;
+ margin: 0 auto;
+ margin-top: 7rem;
+ margin-bottom: 1rem;
+ transform:rotate(25deg);
+}
+
+.main-section__title button {
+ font-size: 1.5rem;
+ background: rgb(0, 0, 0, 0.5);
+ border: 2px solid #CD5C5C;
+ border-radius: 10px;
+ cursor: pointer;
+ font-size: 1.5rem;
+ padding: 1rem;
+ font-family: "montserrat", sans-serif;
+ font-weight: 600;
+ margin: auto;
+ margin-top: 2rem;
+ color: #FFFACD;
+ display: flex;
+ justify-content: center;
+ transition: 0.5s;
+}
+
+.main-section__title button:hover,
+.main-section__title button:active {
+ background: #CD5C5C;
+ color: #FFFACD;
+ border: 2px solid #FFFACD;
+ transition: transform 500ms;
+ transition: 0.5s;
+}
+
+.main-section__title p {
+color: #FFFACD;
+font-family: "montserrat", sans-serif;
+font-size: 1.5rem;
+background: #CD5C5C;
+border: 1px solid #FFFACD;
+border-radius: 15px;
+padding: 1rem;
+text-align: center;
+text-shadow: 0 0 5px #000000;
+}
+
+/* HORRAIRE SECTION */
+
+.horraire-section {
+ background: #FFFACD;
+ color: #CD5C5C;
+ display: inline-block;
+ width: 100%;
+ text-align: center;
+ font-family: "montserrat", sans-serif;
+ font-size: 1.5rem;
+ padding-top: 3rem;
+ padding-bottom: 3rem;
+ border-top: 2px solid #CD5C5C;
+ text-shadow: 0 0 2px #000000;
+}
+
+/* FOOTER SECTION */
+
+
+footer {
+ background: #000000;
+}
+
+.footer-section {
+ padding: 1rem;
+ border-top: 2px solid #CD5C5C;
+ display: flex;
+ justify-content: center;
+}
+
+.footer-section a {
+ text-decoration: none;
+ color: #FFFACD;
+ font-family: "montserrat", sans-serif;
+ font-weight: 200;
+ font-size: 1.5rem;
+ display: flex;
+ justify-content: center;
+ padding: 1rem;
+ transition: 0.5s;
+}
+
+.footer-section a:hover,
+.footer-section a:active {
+  transition: 0.5s;
+  color: #CD5C5C;
+}
+
+.footer-logo {
+display: flex;
+justify-content: space-between;
+padding: 2rem 25%;
+}
+
+/* MEDIA QUERY DESKTOP */
+
+@media (min-width: 40rem) {
+
+
+ .hamburger-button {
+  display: none;
+ }
+
+ .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ 
+ .navbar-options {
+  display: flex;
+  float: right;
+  padding-right: 2rem;
+ }
+
+ .navbar-option {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFACD;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  margin: 1.5rem;
+  padding: 0.2rem;
+}
+.navbar-option:hover,
+.navbar-option:active {
+ border-bottom: 1px solid #CD5C5C;
+ transition: 0.5s;
+}
+.main-section {
+ padding-bottom: 5rem;
+ display: flex;
+ justify-content:flex-start;
+ padding-left: 7rem;
+}
+
+
+.main-section__title h1 {
+ font-size: 5rem;
+ background: transparent
+}
+.main-section__title img {
+height: 18rem;
+}
+.main-section__title button {
+ padding: 1rem 4rem;
+ font-size: 2rem;
+}
+.main-section__title p {
+ font-size: 2rem;
+}
+
+.footer-logo {
+  padding: 2rem 35%;
+  }
+}
